@@ -50,6 +50,7 @@ class App extends Component {
   spawnEntities() {
     let newEntities = spawnEntities(this.state.idx);
     // implement me
+    newEntities.forEach(item => this.addTargets(item));
   }
 
   addTargets(newTargets) {
